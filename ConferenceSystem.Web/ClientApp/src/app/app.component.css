@@ -1,0 +1,28 @@
+h1
+{
+    text-align: center;
+    color: blueviolet;
+}
+
+#users{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#users td, #users th{
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+  #users tr:nth-child(even) {
+    background-color: white;
+  }
+
+  #users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: mediumaquamarine;
+    color: white;
+  }
