@@ -9,8 +9,10 @@ namespace ConferenceSystem.Web.Data
 {
     public class Context : DbContext
     {
-        public DbSet<Room1> Room1 { get; set; }
-        public DbSet<Room2> Room2 { get; set; }
-        public DbSet<Room3> Room3 { get; set; }
+        public Context(DbContextOptions<Context>options) : base(options)
+        {
+        }
+
+        public DbSet<DbValue> Room1 { get; set; }
     }
 }

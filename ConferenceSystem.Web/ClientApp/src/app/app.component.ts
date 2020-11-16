@@ -8,6 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
+
+
+
   headers = ["Hour", "Room 1", "Room 2", "Room 3"];
 
   rows = [

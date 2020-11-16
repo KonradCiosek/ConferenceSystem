@@ -1,0 +1,9 @@
+<div>
+  <app-form></app-form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data.Id_Worker" cdkFocusInitial>Ok</button>
+</div>
+

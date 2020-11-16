@@ -1,0 +1,20 @@
+<div>
+  <mat-form-field appearance="fill">
+    <mat-label>ID Pracownika</mat-label>
+    <input matInput [(ngModel)]="Id_Worker">
+  </mat-form-field>
+
+  <div>
+    <mat-form-field>
+      <mat-select [(value)]="Id_Room">
+        <mat-option value="1">Room1</mat-option>
+        <mat-option value="2">Room2</mat-option>
+        <mat-option value="3">Room3</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <button mat-raised-button (click)="functionSelect()">Console</button>
+  <button mat-raised-button (click)="functionWorker()">Console</button>
+
+</div>

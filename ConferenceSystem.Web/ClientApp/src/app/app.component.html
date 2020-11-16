@@ -1,23 +1,28 @@
 <h1>Conference room</h1>
 <hr />
+<div>
+  <app-datepicker></app-datepicker>
+  <app-time></app-time>
+  <app-window></app-window>
+
+
+
+</div>
+
 <table id="users">
   <tr>
-    <th *ngFor ="let column of headers">
+    <th *ngFor="let column of headers">
       {{column}}
     </th>
   </tr>
 
-  <tr *ngFor ="let row of rows">
-    <td *ngFor ="let column of headers">
+  <tr *ngFor="let row of rows">
+    <td *ngFor="let column of headers">
       {{row[column]}}
     </td>
   </tr>
-
 </table>
 
 
-<mat-form-field>
-  <input matInput [matDatepicker]="myDatePicker">
-  <mat-datepicker-toggle [for]="myDatePicker" matSuffix></mat-datepicker-toggle>
-  <mat-datepicker #myDatePicker></mat-datepicker>
-</mat-form-field>
+
+
