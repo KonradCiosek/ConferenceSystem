@@ -11,13 +11,16 @@ export interface DialogData
   templateUrl: 'window.booking.html',
   styleUrls: ['window.booking.css'],
 })
-export class Window{
+export class Window
+{
 
   Id_Worker: string;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog)
+  {  }
 
-  openDialog(): void {
+  openDialog(): void
+  {
     const dialogRef = this.dialog.open(WindowValue,
     {
       height: '300px',
@@ -25,11 +28,10 @@ export class Window{
       data: { Id_Worker: this.Id_Worker }
     });
 
-    dialogRef.afterClosed().subscribe(result =>
-    {
-      console.log('The dialog was closed');
-      this.Id_Worker = result;
-    });
+    //dialogRef.afterClosed().subscribe(result =>
+    //{
+    //    console.log('The dialog was closed');
+    //});
   }
 
 }
@@ -45,7 +47,7 @@ export class WindowValue
     public dialogRef: MatDialogRef<WindowValue>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) { }
 
-  onNoClick(): void {
+  onCancelClick(): void {
     this.dialogRef.close();
   }
 
